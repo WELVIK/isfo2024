@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <title>Gestion des activités</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="input-group mb-3 ">
+        <input type="text" id="searchText" class="form-control" placeholder="Enter your username" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class="btn btn-primary" type="button" id="btn_search">Search</button>
+    </div> 
+    <form action="" id="activitesForm">
+        
+        <div class="mb-3">
+            <label for="activite" class="form-label">Activité</label>
+            <select name="activite" class="form-select" id="activite">
+
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="jours" class="form-label">jours</label>
+            <input type="number" class="form-control" name="jours" id="jours"/>
+        </div>
+        <div class="mb-3">
+            <label for="date_debut" class="form-label">Date Début</label>
+            <input type="date" class="form-control" name="date_debut" id="date_debut"/>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Validé" id="valideCheckbox">
+            <label class="form-check-label" for="valideCheckbox">
+              Validé
+            </label>
+        </div>
+        <div class="mb-3 pt-2">
+            <button id="ajouter" class="btn btn-success">Ajouter</button>
+        </div>
+        
+    </form>
+    <table id="stagiare_activite_table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col"> Stagiaire id</th>
+            <th scope="col">Prenom Stagiaire</th>
+            <th scope="col">Nom Stagiaire</th>
+            <th scope="col">Activité</th>
+            <th scope="col">Nombre des jours</th>
+            <th scope="col">Date Début</th>
+            <th scope="col">Valide</th>
+          </tr>
+        </thead>
+        <tbody id="tdata">
+            
+        </tbody>
+        
+    </table>
+    <div class="mb-3">
+        <button id="supprimer" class="btn btn-danger">Supprimer</button>
+        <button id="modifier" class="btn btn-danger">Modifier</button>
+    </div>
+    </div>
+       <script src="script.js"></script> 
+</body>
+</html>

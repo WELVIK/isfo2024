@@ -1,0 +1,16 @@
+{
+    "stagiaires":[
+        {"id":"ST1","nom":"mohimi","prenom":"yousra","age":19},
+        {"id":"ST2","nom":"boukri","prenom":"ikram","age":19},
+        {"id":"ST3","nom":"mabty","prenom":"raihane","age":18},
+        {"id":"ST4","nom":"el idrysy","prenom":"aymen","age":18}
+    ],
+
+    "activites":[
+        {"id":"A1","libelle":"Les ateliers culturels"},
+        {"id":"A2","libelle":"Le Ciné-Campus"},
+        {"id":"A3","libelle":"Tournoi de jeux vidéo"},
+        {"id":"A4","libelle":"Soirée quiz"}
+    ]
+    
+}
